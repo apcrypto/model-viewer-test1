@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Viewer #1</title>
+    <link rel="stylesheet" href="./styles/mask.css" />
+    <script src="scripts/index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+    ></script>
+  </head>
+  <body>
+    <model-viewer
+      width="100%"
+      src="https://mbkassets.s3-eu-west-1.amazonaws.com/dev/ar/headphones.glb"
+      alt="A 3D model of an astronaut"
+      auto-rotate
+      camera-controls
+    ></model-viewer>
+  </body>
+</html>
