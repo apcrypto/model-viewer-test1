@@ -1,0 +1,53 @@
+model-viewer {
+  width: 100vw;
+  height: 80vh;
+}
+
+.toolbar {
+  display: flex;
+  position: fixed;
+  bottom: 60px;
+}
+
+ul {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+.position1 {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.position2 {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.position3 {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.position4 {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 20px;
+}

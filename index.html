@@ -4,20 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Model Viewer #1</title>
-    <link rel="stylesheet" href="./styles/mask.css" />
-    <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+
     <script
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
     ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
   </head>
   <body>
-    <model-viewer
-      width="100%"
-      src="https://mbkassets.s3-eu-west-1.amazonaws.com/dev/ar/headphones.glb"
-      alt="A 3D model of an astronaut"
-      auto-rotate
-      camera-controls
-    ></model-viewer>
+    <div class="model-viewer-wrapper">
+      <model-viewer
+        id="orbit-test"
+        src="./assets/headphones.glb"
+        alt="A 3D model of headphones"
+        ar-scale="fixed"
+      >
+      </model-viewer>
+    </div>
+    <div>
+      <div class="toolbar">
+        <ul>
+          <li class="position1">Position 1</li>
+          <li class="position2">Position 2</li>
+          <li class="position3">Position 3</li>
+          <li class="position4">Position 4</li>
+        </ul>
+      </div>
+    </div>
   </body>
+  <script src="scripts/index.js"></script>
 </html>
