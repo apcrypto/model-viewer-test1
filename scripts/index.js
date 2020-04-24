@@ -7,7 +7,7 @@ function eventHandler(e) {
   let position = e.target.attributes[0].value;
   let att = document.createAttribute("camera-orbit");
   if (position == "position1") {
-    att.value = "90deg auto 50%";
+    att.value = "90deg auto 100%";
     modelViewer.setAttributeNode(att);
   } else if (position == "position2") {
     att.value = "auto -180deg auto";
