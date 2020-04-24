@@ -1,5 +1,4 @@
 let toolbar = document.querySelector(".toolbar");
-let wrapper = document.querySelector(".model-viewer-wrapper");
 let modelViewer = document.querySelector("#orbit-test");
 toolbar.addEventListener("click", eventHandler);
 
