@@ -16,6 +16,7 @@ model-viewer {
   width: 100%;
   bottom: 20px;
   left: 0px;
+  z-index: 9;
 }
 
 ul {
@@ -162,6 +163,7 @@ button[slot="hotspot-side"] {
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  z-index: 9;
 }
 
 .logo {
