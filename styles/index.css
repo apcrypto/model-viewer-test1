@@ -160,3 +160,16 @@ button[slot="hotspot-side"] {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+img {
+  width: 150px;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #000;
+}
