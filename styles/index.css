@@ -17,6 +17,7 @@ model-viewer {
   bottom: 20px;
   left: 0px;
   z-index: 9;
+  bottom: 1vh;
 }
 
 ul {
