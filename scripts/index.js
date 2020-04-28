@@ -1,10 +1,12 @@
-let toolbar = document.querySelector(".toolbar");
-let modelViewer = document.querySelector("#orbit-test");
+const toolbar = document.querySelector(".toolbar");
+const modelViewer = document.querySelector("#orbit-test");
+const progress = document.querySelector("#progress");
+const bar = progress.querySelector(".bar");
 toolbar.addEventListener("click", eventHandler);
 
 function eventHandler(e) {
-  let position = e.target.attributes[0].value;
-  let att = document.createAttribute("camera-orbit");
+  const position = e.target.attributes[0].value;
+  const att = document.createAttribute("camera-orbit");
   if (position == "position1") {
     att.value = "90deg auto 100%";
     modelViewer.setAttributeNode(att);
@@ -19,3 +21,9 @@ function eventHandler(e) {
     modelViewer.setAttributeNode(att);
   }
 }
+
+modelViewer.addEventListener("progress", (event) => {
+  const { totalProgress } = event.detail;
+  progress.classList.toggle("show", totalProgress < 1);
+  bar.style.transform = `scaleX(${totalProgress})`;
+});
