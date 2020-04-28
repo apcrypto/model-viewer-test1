@@ -160,6 +160,7 @@ button[slot="hotspot-side"] {
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  z-index: 9;
 }
 
 .logo {
