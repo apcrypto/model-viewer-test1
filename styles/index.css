@@ -124,7 +124,7 @@ button[slot="hotspot-side"] {
   width: calc(100% / 3);
   height: 10px;
   color: rgba(8, 8, 8, 0);
-  box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25); */
   border: 2px solid black;
   border-radius: 10px;
   top: calc(50% - 5px);
@@ -144,4 +144,19 @@ button[slot="hotspot-side"] {
   background-color: #000;
   transform-origin: top left;
   transform: scaleX(0);
+}
+
+.text-wrapper {
+  display: flex;
+  position: fixed;
+}
+
+.text {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 15vh;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
