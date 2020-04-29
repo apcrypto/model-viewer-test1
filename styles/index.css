@@ -37,6 +37,9 @@ ul {
   background-color: #000;
   color: #fff;
   padding: 10px;
+  cursor: pointer;
+  width: 8vw;
+  text-align: center;
 }
 
 .position2 {
@@ -50,6 +53,9 @@ ul {
   background-color: #000;
   color: #fff;
   padding: 10px;
+  cursor: pointer;
+  width: 8vw;
+  text-align: center;
 }
 
 .position3 {
@@ -63,6 +69,9 @@ ul {
   background-color: #000;
   color: #fff;
   padding: 10px;
+  cursor: pointer;
+  width: 8vw;
+  text-align: center;
 }
 
 .position4 {
@@ -76,6 +85,9 @@ ul {
   background-color: #000;
   color: #fff;
   padding: 10px;
+  cursor: pointer;
+  width: 8vw;
+  text-align: center;
 }
 
 #default-progress-bar {
