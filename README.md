@@ -1,4 +1,4 @@
-# model-viwer test #1
+# model-viewer test #1
 
 ## 3D product tour built with Google Model-Viewer
 
