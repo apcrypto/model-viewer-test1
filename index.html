@@ -29,13 +29,27 @@
         id="orbit-test"
         src="https://mbkassets.s3-eu-west-1.amazonaws.com/dev/ar/headphones2.glb"
         alt="A 3D model of headphones"
-        camera-controls
       >
         <div id="progress" slot="progress-bar">
           <div class="bar"></div>
         </div>
 
         <button
+          class="pos1"
+          slot="hotspot-side"
+          data-position="402.73 566.78 3.75"
+          data-normal="0.96 0.26 -0.009"
+          data-visibility-attribute="visible"
+        >
+          <div id="annotation">
+            With Bose Headphones 700, we’ve even improved on what we’re most
+            known for. You can now personalise your environment with 11 levels
+            of noise cancellation.
+          </div>
+        </button>
+
+        <button
+          class="pos2"
           slot="hotspot-headband"
           data-position="2.35 872.6 14.4"
           data-normal="-0.058 0.998 0.0"
@@ -48,6 +62,7 @@
         </button>
 
         <button
+          class="pos3"
           slot="hotspot-bottom"
           data-position="-336.14 127.46 2.01"
           data-normal="-0.86 -0.49 0.0005"
@@ -57,19 +72,6 @@
             A better wireless experience starts with what you hear. Bose on-ear
             wireless headphones are engineered for crisp, powerful sound that
             brings your music to life.
-          </div>
-        </button>
-
-        <button
-          slot="hotspot-side"
-          data-position="402.73 566.78 3.75"
-          data-normal="0.96 0.26 -0.009"
-          data-visibility-attribute="visible"
-        >
-          <div id="annotation">
-            With Bose Headphones 700, we’ve even improved on what we’re most
-            known for. You can now personalise your environment with 11 levels
-            of noise cancellation.
           </div>
         </button>
       </model-viewer>
