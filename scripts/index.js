@@ -49,7 +49,7 @@ function eventHandler(e) {
     //   }
     // }, 600);
   } else if (position == "position2") {
-    att.value = "auto -180deg 80%";
+    att.value = "auto -180deg 90%";
     modelViewer.setAttributeNode(att);
 
     position1.style.backgroundColor = "#000";
@@ -70,7 +70,7 @@ function eventHandler(e) {
     // }, 600);
   } else if (position == "position3") {
     const cameraOrbit = modelViewer.getCameraOrbit();
-    att.value = "-90deg 180deg 80%";
+    att.value = "-90deg 170deg 85%";
     modelViewer.setAttributeNode(att);
     position1.style.backgroundColor = "#000";
     position1.style.borderColor = "#0000";
