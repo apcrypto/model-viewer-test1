@@ -9,6 +9,10 @@ model-viewer {
   top: 0vh;
 }
 
+model-viewer.reveal {
+  --poster-color: transparent;
+}
+
 .toolbar {
   display: flex;
   position: fixed;
