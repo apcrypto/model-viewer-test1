@@ -7,18 +7,15 @@ const progress = document.querySelector("#progress");
 const bar = progress.querySelector(".bar");
 const headbandHotspot = document.querySelector(".hotspot-headband");
 
-const pos1ThetaPhi = {
-  theta: 1.5707963267948966,
-  phi: 1.3089969389957472,
-};
-const pos2ThetaPhi = {
-  theta: 0,
-  phi: 0.39269908169872414,
-};
-const pos3ThetaPhi = {
-  theta: 0,
-  phi: 2.748893571891069,
-};
+const posters = ["poster1.png", "poster2.png", "poster3.png"];
+const togglePoster = document.querySelector("#toggle-poster");
+let i = 0;
+console.log(posters);
+console.log(togglePoster);
+setInterval(
+  () => togglePoster.setAttribute("poster", `./assets/${posters[++i % 3]}`),
+  2000
+);
 
 const toolbar = document
   .querySelector(".toolbar")
@@ -98,9 +95,6 @@ function eventHandler(e) {
     position2.style.borderColor = "#0000";
     position3.style.backgroundColor = "#000";
     position3.style.borderColor = "#0000";
-    console.log("pos4 theta", cameraOrbit.theta);
-    console.log("pos4 phi", cameraOrbit.phi);
-    // console.log("position4", modelViewer.getCameraOrbit());
   }
 }
 
