@@ -6,14 +6,13 @@ const modelViewer = document.querySelector("#orbit-test");
 const progress = document.querySelector("#progress");
 const bar = progress.querySelector(".bar");
 const headbandHotspot = document.querySelector(".hotspot-headband");
-
-const posters = ["poster1.png", "poster2.png", "poster3.png"];
-const togglePoster = document.querySelector("#toggle-poster");
+const togglePoster = document.querySelector(".toggle-poster");
+const posters = ["poster1.png", "poster2.png", "poster3.png", "poster4.png"];
 let i = 0;
 console.log(posters);
 console.log(togglePoster);
 setInterval(
-  () => togglePoster.setAttribute("poster", `./assets/${posters[++i % 3]}`),
+  () => togglePoster.setAttribute("poster", `./assets/${posters[++i % 4]}`),
   2000
 );
 
