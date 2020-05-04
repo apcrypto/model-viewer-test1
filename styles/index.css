@@ -6,7 +6,7 @@ model-viewer {
   width: 100vw;
   height: 80vh;
   z-index: 1;
-  top: 2vh;
+  top: 0vh;
 }
 
 .toolbar {
@@ -191,8 +191,4 @@ button[slot="hotspot-side"] {
   top: 0px;
   background-color: #000;
   z-index: 9;
-}
-
-a#default-ar-button {
-  bottom: 50px;
 }
