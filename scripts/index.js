@@ -110,7 +110,7 @@ modelViewer.addEventListener("progress", (event) => {
   bar.style.transform = `scaleX(${totalProgress})`;
 });
 
-modelViewer.addEventListener("mouseout", function (e) {
+modelViewer.addEventListener("touchend", function (e) {
   position1.style.backgroundColor = "#000";
   position1.style.borderColor = "#000";
   position2.style.backgroundColor = "#000";
